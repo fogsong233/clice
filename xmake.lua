@@ -19,7 +19,7 @@ if has_config("dev") then
             os.raise()
         end
     elseif is_mode("debug") and is_plat("linux", "macosx") then
-        set_policy("build.sanitizer.address", true)
+        -- set_policy("build.sanitizer.address", true)
     end
 
     if has_config("enable_test") then
